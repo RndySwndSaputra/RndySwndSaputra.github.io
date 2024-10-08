@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #333e51;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    border-radius: 10px;
+
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 2px;
+    color: #f4f4f4;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 5px solid #fff;
+    overflow: hidden;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+section {
+    border: 1px solid #333e51;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(236, 11, 11, 0.1);
+}
+
+.semi-bold {
+    font-size: 16px;
+    font-weight: 550;
+}
+
+ul li {
+    position: relative;
+}
+
+section ul li .date {
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+section ul li .info {
+    margin-bottom: 20px;
+}
+
+section ul li:last-child .info {
+    margin-bottom: 0;
+}
+
+.resume-work ul,
+.resume-education ul {
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+.resume-work ul li:before,
+.resume-education ul li:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -24px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid#333e51;
+}
+
+.resume-work ul li:after,
+.resume-education ul li:after {
+    content: "";
+    position: absolute;
+    background-color: #333e51;
+    top: 16px;
+    left: -20px;
+    width: 2px;
+    height: 133px;
+}
+
+.icon i,
+.resume-hobby ul li i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.resume-hobby ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.resume-hobby ul li i {
+    font-size: 30px;
+}
+
+.resume-hobby ul li {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #333e51;
+    border-radius: 50%;
+    position: relative;
+    color: #333e51;
+}
+
+.resume-hobby ul li:last-child:before {
+    display: none;
+}
+
+.resume-skill ul {
+    display: flex;
+    gap: 20px;
+}
+
+.resume-skill ul li i {
+    font-size: 40px;
+}
+
+.resume-social ul li p {
+    margin-top: 2px;
+    padding-left: 30px;
+    overflow: hidden;
+}
+
+.resume-social ul li .icon i {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.resume-social ul li {
+    margin-left: 20px;
+    padding-top: 2px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #333e51; /* Garis atas biru */
+    font-size: 0.9em;
+    color: #666;
+}
